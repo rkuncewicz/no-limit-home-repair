@@ -1,0 +1,15 @@
+machine:
+  timezone:
+    America/Toronto
+  node:
+    version: 6.10.0
+
+compile:
+  override:
+    - npm run build
+
+deployment:
+  staging:
+    branch: master
+    commands:
+      - aws s3 sync ./ s3://no-limit-home-repair --delete
