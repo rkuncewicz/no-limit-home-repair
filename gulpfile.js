@@ -18,10 +18,10 @@ var banner = ['/*!\n',
 
 // Compiles SCSS files from /scss into /css
 gulp.task('sass', function() {
-    return gulp.src('scss/freelancer.scss')
+    return gulp.src('app/scss/freelancer.scss')
         .pipe(sass())
         .pipe(header(banner, { pkg: pkg }))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -29,10 +29,10 @@ gulp.task('sass', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function() {
-    return gulp.src('css/freelancer.css')
+    return gulp.src('app/css/freelancer.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -40,11 +40,11 @@ gulp.task('minify-css', ['sass'], function() {
 
 // Minify custom JS
 gulp.task('minify-js', function() {
-    return gulp.src('js/freelancer.js')
+    return gulp.src('app/js/freelancer.js')
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('js'))
+        .pipe(gulp.dest('app/js'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -90,10 +90,10 @@ gulp.task('browserSync', function() {
 
 // Dev task with browserSync
 gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() {
-    gulp.watch('scss/*.scss', ['sass']);
-    gulp.watch('css/*.css', ['minify-css']);
-    gulp.watch('js/*.js', ['minify-js']);
+    gulp.watch('app/scss/*.scss', ['sass']);
+    gulp.watch('app/css/*.css', ['minify-css']);
+    gulp.watch('app/js/*.js', ['minify-js']);
     // Reloads the browser whenever HTML or JS files change
-    gulp.watch('*.html', browserSync.reload);
-    gulp.watch('js/**/*.js', browserSync.reload);
+    gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/js/**/*.js', browserSync.reload);
 });
