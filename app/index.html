@@ -48,7 +48,10 @@
             <div class="collapse navbar-collapse" id="navbarExample">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Past Work</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -68,16 +71,42 @@
             <div class="intro-text">
                 <span class="name">Andrews No Limit Home Repair</span>
                 <hr class="star-light">
-                <span class="skills">Home Repair - Carpentry and Finshings - Maintenance</span>
+                <span class="skills">Home Repair - Carpentry and Finishings - Maintenance</span>
+                </br> </br>
+                <span class="skills">Servicing Huntsville, Bracebridge and the surrounding area</span>
             </div>
         </div>
     </header>
 
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <div>
+                <h2 class="text-center">Specializations & Services</h2>
+            </div>
+            <hr class="star-primary">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <ul>
+                        <li>Small Repairs Around The Cottage</li>
+                        <li>Carpentry & Finishings</li>
+                        <li>Woodworking</li>
+                        <li>Decks and Dock Repairs</li>
+                        <li>Cottage Maintenance</li>
+                        <li>Plumbing and Bathroom Repair</li>
+                        <li>Marble and Ceramic Tile Repairs</li>
+                    </ul>
+                    <span>If there is anything you'd like done, don't be afraid to ask. Inquire today by calling or emailing.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <section id="portfolio" class="success">
         <div class="container">
             <h2 class="text-center">Past Work</h2>
-            <hr class="star-primary">
+            <hr class="star-light">
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
                     <div class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
@@ -86,7 +115,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/bar.jpg" alt="">
+                        <img class="img-fluid" src="img/bar_crop.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -96,7 +125,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/basement.jpg" alt="">
+                        <img class="img-fluid" src="img/basement_crop.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -106,7 +135,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/stairs.jpg" alt="">
+                        <img class="img-fluid" src="img/stairs_crop.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -116,7 +145,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/table.jpg" alt="">
+                        <img class="img-fluid" src="img/table_crop.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -124,26 +153,26 @@
     </section>
 
     <!-- About Section -->
-    <section class="success" id="about">
+    <section id="about">
         <div class="container">
             <h2 class="text-center">Andrzej Kuncewicz</h2>
-            <hr class="star-light">
+            <hr class="star-primary">
+            <div class="headshot">
+                <img src="img/andrew.jpg" alt="headshot" class="img-thumbnail">
+            </div>
             <div class="row">
-                <div class="col-lg-4 offset-lg-2">
-                    <p>Andrzej Kuncewicz has over 24 years of experience working as a contractor in Ontario, specializing in carpentry, tiling and finishings.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>I need to add more things into here</p>
+                <div class="col-lg-8 offset-lg-2">
+                    <p>Andrzej Kuncewicz has over 24 years of experience working as a contractor in Ontario, specializing in carpentry, tiling and finishings. Working on building homes in the GTA, maintenance in corporate office, and cottages in the Muskoka region he has worked on jobs ranging from small repairs to entire building foundations. Now living in Huntsville, Ontario he is looking to continue his passion in woodworking and repairs to make your home look like new.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="success">
         <div class="container">
             <h2 class="text-center">Contact Me</h2>
-            <hr class="star-primary">
+            <hr class="star-light">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
@@ -151,7 +180,7 @@
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls">
-                                <label>Name</label>
+                                <label></label>
                                 <input class="form-control" id="name" type="text" placeholder="Name" required data-validation-required-message="Please enter your name.">
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -180,7 +209,7 @@
                         <br>
                         <div id="success"></div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            <button type="submit" class="btn btn-secondary btn-lg">Send</button>
                         </div>
                     </form>
                 </div>
@@ -193,12 +222,9 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-8">
-                    </div>
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col col-md-4 offset-lg-8">
                         <h3>Location</h3>
-                        <p>633 Ravenscliffe Rd
-                            <br>Huntsville, ON P1H 1N5</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.2230281844004!2d-79.24966868421019!3d45.344309979099805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2a72741d4c7325%3A0x72c4cf521fa111a8!2s633+Ravenscliffe+Rd%2C+Huntsville%2C+ON+P1H+1N5!5e0!3m2!1sen!2sca!4v1495925069386" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -234,10 +260,10 @@
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
                             <div class="modal-body">
-                                <h2>Project Title</h2>
+                                <h2>Basement Bar</h2>
                                 <hr class="star-primary">
-                                <img class="img-fluid img-centered" src="img/bar.jpg" alt="">
-                                <p>Test</p>
+                                <img class="img-fluid img-centered" src="img/bar_full.jpg" alt="">
+                                <p>A wooden bar countertop with a natural wood finish.</p>
                                 <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
@@ -259,10 +285,10 @@
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
                             <div class="modal-body">
-                                <h2>Project Title</h2>
+                                <h2>Wooden Walls</h2>
                                 <hr class="star-primary">
-                                <img class="img-fluid img-centered" src="img/basement.jpg" alt="">
-                                <p></p>
+                                <img class="img-fluid img-centered" src="img/basement_full.jpg" alt="">
+                                <p>Walls made from cedar along with insulation.</p>
                                 <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
@@ -284,10 +310,10 @@
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
                             <div class="modal-body">
-                                <h2>Project Title</h2>
+                                <h2>Handmade Stairs</h2>
                                 <hr class="star-primary">
-                                <img class="img-fluid img-centered" src="img/stairs.jpg" alt="">
-                                <p></p>
+                                <img class="img-fluid img-centered" src="img/stairs_full.jpg" alt="">
+                                <p>Compeltely renovated the stairs leading down to the basement along with the railing.</p>
                                 <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
@@ -309,88 +335,10 @@
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
                             <div class="modal-body">
-                                <h2>Project Title</h2>
+                                <h2>Handmade Table</h2>
                                 <hr class="star-primary">
-                                <img class="img-fluid img-centered" src="img/table.jpg" alt="">
-                                <p>Hi</p>
-                                <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <div class="modal-body">
-                                <h2>Project Title</h2>
-                                <hr class="star-primary">
-                                <img class="img-fluid img-centered" src="img/portfolio/safe.png" alt="">
-                                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                                <ul class="list-inline item-details">
-                                    <li>Client:
-                                        <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                    </li>
-                                    <li>Service:
-                                        <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                    </li>
-                                </ul>
-                                <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <div class="modal-body">
-                                <h2>Project Title</h2>
-                                <hr class="star-primary">
-                                <img class="img-fluid img-centered" src="img/portfolio/submarine.png" alt="">
-                                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                                <ul class="list-inline item-details">
-                                    <li>Client:
-                                        <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                    </li>
-                                    <li>Service:
-                                        <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                    </li>
-                                </ul>
+                                <img class="img-fluid img-centered" src="img/table_full.jpg" alt="">
+                                <p>A quick day project to build a coffee table from cedar wood with a quick varnish.</p>
                                 <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
