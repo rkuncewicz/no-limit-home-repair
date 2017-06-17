@@ -2,6 +2,7 @@
     .headshot {
         text-align: center;
         img {
+            background-color: $theme-primary;
             max-width: 400px;
         }
     }

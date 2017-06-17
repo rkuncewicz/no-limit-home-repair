@@ -1,9 +1,15 @@
 // Variables
 
 // Gray and Brand Colors for use across theme
+   
+$theme-grain:   #D7CEC7;
+$theme-grey:    #565656;
+$theme-red:     #76323F;
+$theme-tan:     #C09F80;
 
-$theme-primary:    #2C3E50;
-$theme-success:    #18BC9C;
+$theme-primary: $theme-grey;
+$theme-success: $theme-red;
+$theme-minor: $theme-grain;
 
 $gray-base:        #000;
 $gray-darker:      lighten($gray-base, 13.5%); // #222

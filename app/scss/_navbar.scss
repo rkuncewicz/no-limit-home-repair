@@ -9,21 +9,21 @@
         outline: none;
     }
     .navbar-brand {
-        color: white;
+        color: $theme-minor;
         &:hover,
         &:focus,
         &:active,
         &.active {
-            color: white;
+            color: $theme-minor;
         }
     }
     .navbar-nav {
         letter-spacing: 1px;
         li.nav-item {
             a.nav-link {
-                color: white;
+                color: $theme-minor;
                 &:hover {
-                    color: $theme-success;
+                    color: $theme-tan;
                     outline: none;
                 }
                 &:focus,
@@ -55,7 +55,7 @@
         -moz-transition: padding .3s;
         transition: padding .3s;
         .navbar-brand {
-            font-size: 2em;
+            font-size: 1.5em;
             -webkit-transition: all .3s;
             -moz-transition: all .3s;
             transition: all .3s;

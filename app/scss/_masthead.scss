@@ -1,17 +1,24 @@
 // Styling for the masthead
 header.masthead {
+    min-height: 800px;
     text-align: center;
-    color: white;
-    background: $theme-success;
+    color: $theme-grain;
+    background-image: url('../img/cover.jpg');
+    background-position: 5px;
+    position: relative;
     .container {
         padding-top: 100px;
         padding-bottom: 50px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
     }
     img {
         display: block;
         margin: 0 auto 20px;
     }
     .intro-text {
+        padding-top: 265px;
         .name {
             font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-size: 2em;
@@ -37,7 +44,7 @@ header.masthead {
         }
         .intro-text {
             .name {
-                font-size: 4.75em;
+                font-size: 3em;
             }
             .skills {
                 font-size: 1.75em;

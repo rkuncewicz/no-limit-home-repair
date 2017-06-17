@@ -17,7 +17,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: $theme-success;
+    color: $theme-minor;
     outline: none;
 }
 
@@ -33,6 +33,8 @@ h6 {
 }
 
 hr.star-light,
+hr.star-header,
+hr.star-picture,
 hr.star-primary {
     max-width: 250px;
     margin: 25px auto 30px;
@@ -43,6 +45,8 @@ hr.star-primary {
 }
 
 hr.star-light:after,
+hr.star-header:after,
+hr.star-picture:after,
 hr.star-primary:after {
     font-family: FontAwesome;
     font-size: 2em;
@@ -54,11 +58,11 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: white;
+    border-color: $theme-tan;
 }
 
 hr.star-light:after {
-    color: white;
+    color: $theme-tan;
     background-color: $theme-success;
 }
 
@@ -67,6 +71,24 @@ hr.star-primary {
 }
 
 hr.star-primary:after {
+    color: $theme-primary;
+    background-color: $theme-grain;
+}
+
+hr.star-header {
+    border-color: $theme-grain;
+}
+
+hr.star-header:after {
+    color: $theme-grain;
+    background-color: $theme-tan;
+}
+
+hr.star-picture {
+    border-color: $theme-primary;
+}
+
+hr.star-picture:after {
     color: $theme-primary;
     background-color: white;
 }
@@ -78,14 +100,19 @@ hr.star-primary:after {
 section {
     padding: 100px 0;
     h2 {
-        font-size: 3em;
+        font-size: 2.5em;
         margin: 0;
     }
 }
 
 section.success {
-    color: white;
+    color: $theme-tan;
     background: $theme-success;
+}
+
+section.oppose {
+    color: $theme-primary;
+    background: $theme-grain;
 }
 
 @media(max-width:767px) {
