@@ -44,19 +44,6 @@ hr.star-primary {
     border-top: solid 5px;
 }
 
-hr.star-light:after,
-hr.star-header:after,
-hr.star-picture:after,
-hr.star-primary:after {
-    font-family: FontAwesome;
-    font-size: 2em;
-    position: relative;
-    top: -.8em;
-    display: inline-block;
-    padding: 0 .25em;
-    content: '\f005';
-}
-
 hr.star-light {
     border-color: $theme-tan;
 }

@@ -3,6 +3,10 @@ compile:
     - npm install -g gulp
     - gulp
 
+test:
+  override:
+    - echo "test"
+
 deployment:
   staging:
     branch: master
