@@ -11,4 +11,4 @@ deployment:
   staging:
     branch: master
     commands:
-      - aws s3 sync app/ s3://no-limit-home-repair --delete
+      - aws s3 sync app/ s3://muskokacottagerepairs.com --delete
