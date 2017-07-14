@@ -82,3 +82,25 @@ footer {
         background-color: darken($theme-primary, .05);
     }
 }
+
+#contact {
+    .row {
+        text-align: center;
+    }
+}
+
+.contact {
+    div:first-child {
+        margin-bottom: 20px;
+    }
+
+    .contact-heading {
+        margin-top: 15px;
+        margin-right: 5px;
+        font-size: 1.4em;
+    }
+
+    .contact-info {
+        font-size: 1.3em;
+    }
+}
